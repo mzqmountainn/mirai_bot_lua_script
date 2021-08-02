@@ -1,0 +1,2 @@
+# mirai_bot_lua_script
+这里是mirai_bot_lua的lua脚本仓库，里面有我自己写的，还有我以别人的脚本为基础而进行修复/改编的脚本
