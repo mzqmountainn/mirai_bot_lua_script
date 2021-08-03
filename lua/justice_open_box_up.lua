@@ -1,6 +1,6 @@
---orgin by Mzq
+--origin by Mzq
 --20210803
---ÕıÒå¿ªºĞ ÓÃ·¨¿´´úÂë 
+--æ­£ä¹‰å¼€ç›’ ç”¨æ³•çœ‹ä»£ç  
 Event.subscribe("GroupMessageEvent",function (event)
     local msg = event.message
 	local group = event.group
@@ -10,7 +10,7 @@ Event.subscribe("GroupMessageEvent",function (event)
 	    local msg_str = tostring(msg)
 		qq=string.gsub(msg_str,"##",'')
 	    group:sendMessage("nmsl!")	
-		huji=Http.get("ÌîÈë¿ªºĞapiµØÖ·£¬ÎÒµÄ¾Í²»¹«¿ªÁË" ..qq)
+		huji=Http.get("å¡«å…¥å¼€ç›’apiåœ°å€ï¼Œæˆ‘çš„å°±ä¸å…¬å¼€äº†" ..qq)
 	    group:sendMessage(huji)
 	end
 end)
