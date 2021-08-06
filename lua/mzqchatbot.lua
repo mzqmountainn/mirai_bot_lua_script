@@ -15,7 +15,7 @@ Event.subscribe("GroupMessageEvent",function (event)
         msg_str_a = string.gsub(msg_result,"{\"result\":0,\"content\":\"",'')
         msg_str_b=string.gsub(msg_str_a,"\"}",'')
         msg_str_c= string.gsub(msg_str_b,"chat",'')
-        group:sendMessage(msg_str_c)
+        group:sendMessage( Quote(msg)+msg_str_c)
         end
 end)
 Event.subscribe("FriendMessageEvent",function(event)
@@ -30,7 +30,7 @@ Event.subscribe("FriendMessageEvent",function(event)
         msg_str_a = string.gsub(msg_result,"{\"result\":0,\"content\":\"",'')
         msg_str_b=string.gsub(msg_str_a,"\"}",'')
         msg_str_c= string.gsub(msg_str_b,"chat",'')
-        friend:sendMessage(msg_str_c)
+        friend:sendMessage( Quote(msg)+msg_str_c)
         end     
 end)
 
